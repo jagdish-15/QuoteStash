@@ -17,7 +17,7 @@ QuoteStash is a web application that generates random quotes from the ZenQuotes 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/QuoteStash.git
+   git clone https://github.com/jagdish-15/QuoteStash.git
 2. Open the `index.html` file in your preferred web browser to start using the app.
 
 ## Usage
