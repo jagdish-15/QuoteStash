@@ -1,5 +1,8 @@
 # QuoteStash
 
+## Status
+**Work in Progress:** This project is currently under development. Features may change and be unavailable. The implementation is subject to updates.
+
 ## Overview
 QuoteStash is a web application that generates random quotes from the ZenQuotes API at the click of a button, providing users with a daily dose of inspiration. Users can press the "Get Quote" button to receive a new quote, making it an engaging way to discover and share motivational sayings.
 
