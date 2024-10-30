@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Caveat", cursive;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url(Assets/background.jpg);
+    height: 100%;
+}
+
+section {
+    text-align: center;
+}
+
+img {
+    height: 350px;
+    border-radius: 1rem;
+    box-shadow: 2mm 2mm 5mm black;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0px 20% 1rem 20%;
+}
+
+#author {
+    margin-bottom: 0.5rem;
+}
+
+button {
+    background-color: rgba(255, 160, 0, 0.8);
+    box-shadow: 0 0 15px rgba(255, 160, 0, 0.8), 0 0 30px rgba(255, 160, 0, 0.6);
+    border: none;
+    font-size: 2rem;
+    padding: 0.5rem 2.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255, 160, 0, 0.8), 0 0 45px rgba(255, 160, 0, 0.6);
+}
+
+@media (max-width: 1080px) {
+    p {
+        margin: 0px 10% 1rem 10%;
+    }
+}
+
+@media (max-width: 540px) {
+    p {
+        margin: 0px 2% 1rem 2%;
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    img {
+        height: 250px;
+    }
+    button {
+        transform: scale(0.75);
+    }
+    button:hover {
+        transform: scale(0.75);
+        background-color: rgba(255, 160, 0, 1);
+    }
+}
