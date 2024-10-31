@@ -8,7 +8,7 @@ async function getApiResponse() {
         let apiResponse = await axios.get(url);
         return JSON.parse(apiResponse.data.contents).quote;
     } catch (err) {
-        return {body: "Error: Quote not found!!", author: "-Author"};
+        return {body: "Error: Quote not found!!", author: "Author"};
     }
 }
 
