@@ -27,9 +27,16 @@ QuoteStash is a web application that generates random quotes from the ZenQuotes 
 Click the "Generate Quote" button to view a random quote generated from the ZenQuotes API.
 
 ## Future Features
-- Add a “favorite” function to save quotes.
-- Create categories for different types of quotes.
-- Implement user authentication to allow users to save personalized lists of quotes.
+- **Favourite Function**: Allow users to save their favourite quotes for easy access later.
+- **Categories for Quotes**: Organize quotes into categories (e.g., motivational, humorous, love, wisdom) to help users find what they're looking for.
+- **User Authentication**: Enable users to create accounts so they can save personalized lists of quotes.
+- **Daily Quote Notifications**: Allow users to receive a "quote of the day" notification or email to keep them engaged with new quotes regularly.
+- **Quote Sharing**: Add options for users to share quotes directly on social media or through messaging apps.
+- **Search and Filter**: Enable users to search quotes by keyword, author, or theme for easier navigation and discovery.
+- **Inspiration Board**: Allow users to create and organize their own "inspiration boards" or collections of favourite quotes for different moods or goals.
+- **Author Profiles**: Include brief bios for quote authors, along with links to other quotes by the same person.
+
+*[Feel free to suggest additional ideas to make Quote Stash even better!]* 
 
 ## License
 This project is open-source and available under the MIT License.
