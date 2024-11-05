@@ -1,0 +1,19 @@
+{
+  "name": "quotestash",
+  "version": "1.0.0",
+  "description": "A web application that generates random quotes using the ZenQuotes API. Users can press a button to fetch and display a new quote, providing a simple yet engaging way to inspire and uplift. Developed as a learning project to explore API integration in web development, with backgrounds sourced from Unsplash and typography from Google Fonts.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagdish-15/QuoteStash.git"
+  },
+  "author": "Jagdish Prajapati",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jagdish-15/QuoteStash/issues"
+  },
+  "homepage": "https://github.com/jagdish-15/QuoteStash#readme"
+}
