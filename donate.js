@@ -46,8 +46,10 @@ transButton.addEventListener("click", async () => {
         transForm.reportValidity();
         return;
     }
-    donateForm.style.display = "none";
-    donateButton.style.display = "none";
+
+    transForm.style.display = "none";
+    transButton.style.display = "none";
+
     donationData.id = document.querySelector("#trans-id").value;
 
     try {
