@@ -4,6 +4,7 @@ const qr =  document.querySelector("#qr");
 const paymentButton = document.querySelector("#payment");
 const transForm = document.querySelector("#trans-id-form");
 const transButton = document.querySelector("#trans-button");
+const loading = document.querySelector("#loading");
 
 
 let donationData = {};
@@ -49,6 +50,9 @@ transButton.addEventListener("click", async () => {
 
     transForm.style.display = "none";
     transButton.style.display = "none";
+    loading.style.display = "block";
+
+    await new Promise(requestAnimationFrame);
 
     donationData.id = document.querySelector("#trans-id").value;
 

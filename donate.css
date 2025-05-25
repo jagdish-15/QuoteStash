@@ -26,7 +26,7 @@ input:focus {
     transform: scale(1.01);
 }
 
-#trans-button, #payment, #trans-id-form {
+#trans-button, #payment, #trans-id-form, #loading {
     display: none;
 }
 
