@@ -11,6 +11,7 @@ let donationData = {};
 donateButton.addEventListener("click", () => {
     if (!donateForm.checkValidity()) {
         donateForm.reportValidity();
+        return;
     }
 
     donateForm.style.display = "none";
@@ -41,6 +42,10 @@ paymentButton.addEventListener("click", () => {
 });
 
 transButton.addEventListener("click", async () => {
+    if (!transForm.checkValidity()) {
+        transForm.reportValidity();
+        return;
+    }
     donationData.id = document.querySelector("#trans-id").value;
 
     try {
