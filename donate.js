@@ -40,10 +40,27 @@ paymentButton.addEventListener("click", () => {
     transButton.style.display = "inline";
 });
 
-transButton.addEventListener("click", () => {
+transButton.addEventListener("click", async () => {
     donationData.id = document.querySelector("#trans-id").value;
 
-    // Backend post logic
+    try {
+        const response = await fetch("https://quotestash-backend-production.up.railway.app/donate", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(donationData),
+        });
 
-    window.location.href = `thankyou.html?name=${donationData.name}&amount=${donationData.amount}`
+        if (!response.ok) {
+            throw new Error("Failed to submit the donation");
+        }
+
+        const data = await response.json();
+        console.log("Donation submitted successfully:", data);
+        window.location.href = `thankyou.html?name=${donationData.name}&amount=${donationData.amount}`;
+    } catch (error) {
+        console.error("Error in contacting server: ", error);
+        alert("There was an error submitting your donation. Please try again.");
+    }
 });
