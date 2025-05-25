@@ -1,0 +1,29 @@
+form {
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-top: 1rem;
+    font-size: 44px;
+}
+
+input {
+    background-color: rgba(0, 0, 0, 0.2);
+    border: none;
+    height: 3rem;
+    width: 24rem;
+    font-size: 30px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px black;
+    transform: scale(1.01);
+}
