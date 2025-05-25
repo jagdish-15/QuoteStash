@@ -24,14 +24,14 @@
                     <label for="email">Your Email ID:</label>
                     <input id="email" type="email" placeholder="Enter your email..." autocomplete="off" required>
                     <label for="phone-number">Your Phone Number (+91):</label>
-                    <input id="phone-number" type="number" placeholder="Enter you phone number..." required>
+                    <input id="phone-number" type="number" placeholder="Enter you phone number..." minlength="10" maxlength="10" required>
                     <label for="amount">Donation Amount (INR):</label>
                     <input id="amount" type="number" placeholder="Enter the amount..." required>
                 </form>
                 <div id="qr"></div>
                 <form id="trans-id-form">
                     <label for="trans-id">Enter Your UPI ID (Last 4 Digits):</label>
-                    <input id="trans-id" type="number" placeholder="Enter..." required>
+                    <input id="trans-id" type="number" placeholder="Enter..." minlength="4" maxlength="4" required>
                 </form>
             </section>
 
