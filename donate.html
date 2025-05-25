@@ -18,14 +18,29 @@
                 <h3>Your support helps keep this little project alive and growing!</h3>
             </section>
             <section>
-                <form>
-                    <label for="name">Your Name (optional):</label>
-                    <input id="name" type="text" placeholder="Enter your name..." autocomplete="off">
+                <form id="donate-form">
+                    <label for="name">Your Name:</label>
+                    <input id="name" type="text" placeholder="Enter your name..." autocomplete="off" required>
+                    <label for="email">Your Email ID:</label>
+                    <input id="email" type="email" placeholder="Enter your email..." autocomplete="off" required>
+                    <label for="phone-number">Your Phone Number (+91):</label>
+                    <input id="phone-number" type="number" placeholder="Enter you phone number..." required>
                     <label for="amount">Donation Amount (INR):</label>
-                    <input id="amount" type="number" placeholder="Enter the amount...">
+                    <input id="amount" type="number" placeholder="Enter the amount..." required>
+                </form>
+                <div id="qr"></div>
+                <form id="trans-id-form">
+                    <label for="trans-id">Enter Your UPI ID (Last 4 Digits):</label>
+                    <input id="trans-id" type="number" placeholder="Enter..." required>
                 </form>
             </section>
-            <button type="submit">Donate</button>
+
+            <button type="button" id="donate">Donate</button>
+            <button type="button" id="payment">Payment Done?</button>
+            <button type="button" id="trans-button">Submit</button>
         </main>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+        <script src="donate.js"></script>
     </body>
 </html>
