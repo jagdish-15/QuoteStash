@@ -57,7 +57,7 @@ transButton.addEventListener("click", async () => {
     donationData.id = document.querySelector("#trans-id").value;
 
     try {
-        const response = await fetch("https://quotestash-backend-production.up.railway.app/donate", {
+        const response = await fetch("https://quotestash-backend.onrender.com/donate", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
