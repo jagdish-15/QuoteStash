@@ -10,21 +10,28 @@ QuoteStash is a web application that generates random quotes from the ZenQuotes 
 - **Random Quote Generation**: Fetches a new quote each time the user presses the "Get Quote" button using the ZenQuotes API.
 - **Quote Display**: Presents the quote along with the author’s name in a visually appealing format.
 - **User-Friendly Interface**: Simple and clean design for an enjoyable user experience.
+- **Donation Feature**: Accepts donations through UPI, demonstrating basic payment integration.
 
 ## Technologies Used
 - HTML
 - CSS
 - JavaScript
 - ZenQuotes API
+- Node.js (for backend donation functionality)
 
 ## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/jagdish-15/QuoteStash.git
-2. Open the `index.html` file in your preferred web browser to start using the app.
+
+To access and use the application, simply visit the following link:  
+👉 https://jagdish-15.github.io/QuoteStash/index.html
+This link provides full access to all current features, including quote generation and the donation functionality.
+
+## Backend Repository
+
+The backend for handling donations is open-source and can be found here:  
+👉 https://github.com/jagdish-15/quotestash-backend
 
 ## Usage
-Click the "Generate Quote" button to view a random quote generated from the ZenQuotes API.
+Click the "Generate Quote" button to view a random quote generated from the ZenQuotes API. You can also choose to donate to support the project.
 
 ## Future Features
 - **Favourite Function**: Allow users to save their favourite quotes for easy access later.
@@ -36,10 +43,7 @@ Click the "Generate Quote" button to view a random quote generated from the ZenQ
 - **Inspiration Board**: Allow users to create and organize their own "inspiration boards" or collections of favourite quotes for different moods or goals.
 - **Author Profiles**: Include brief bios for quote authors, along with links to other quotes by the same person.
 
-*[Feel free to suggest additional ideas to make Quote Stash even better!]* 
-
-## License
-This project is open-source and available under the MIT License.
+*[Feel free to suggest additional ideas to make QuoteStash even better!]* 
 
 ## Acknowledgments
 - Developed as part of my hunger to learn API integration and web development.
