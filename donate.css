@@ -26,7 +26,7 @@ input:focus {
     transform: scale(1.01);
 }
 
-#trans-button, #payment, #trans-id-form, #loading {
+#trans-button, #payment, #trans-id-form, #loading, #qr-container, #link-text {
     display: none;
 }
 
@@ -37,4 +37,12 @@ input:focus {
 img {
     border-radius: 0px;
     box-shadow: none;
+}
+
+
+@media (max-width: 720px) {
+    #link-text {
+        display: inline;
+        font-size: 24px;
+    }
 }

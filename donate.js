@@ -1,6 +1,8 @@
 const donateForm = document.querySelector("#donate-form");
 const donateButton = document.querySelector("#donate");
 const qr =  document.querySelector("#qr");
+const qrLink = document.querySelector("#link");
+const qrContainer = document.querySelector("#qr-container");
 const paymentButton = document.querySelector("#payment");
 const transForm = document.querySelector("#trans-id-form");
 const transButton = document.querySelector("#trans-button");
@@ -31,11 +33,14 @@ donateButton.addEventListener("click", () => {
         width: 200,
     });
 
+    qrLink.href = upiUrl;
+
+    qrContainer.style.display = "block";
     paymentButton.style.display = "inline";
 });
 
 paymentButton.addEventListener("click", () => {
-    qr.style.display = "none";
+    qrContainer.style.display = "none";
     paymentButton.style.display = "none";
 
     transForm.style.display = "block";

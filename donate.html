@@ -28,7 +28,10 @@
                     <label for="amount">Donation Amount (INR):</label>
                     <input id="amount" name="amount" type="number" placeholder="Enter the amount..." required>
                 </form>
-                <div id="qr"></div>
+                <div id="qr-container">
+                    <div id="qr"></div>
+                    <p id="link-text">Or, <a id="link" href="">tap this</a> to open your UPI app.</p>
+                </div>
                 <form id="trans-id-form">
                     <label for="trans-id">Enter Your Transection ID (Last 4 Digits):</label>
                     <input id="trans-id" name="trans-id" type="text" pattern="\d{4}" placeholder="Enter..."  maxlength="4" required>
